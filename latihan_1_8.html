@@ -2,12 +2,38 @@
 <html>
 <head> 
     <title>Membuat Tabel Biodata</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .photo-cell {
+            width: 100px; /* Sesuaikan dengan ukuran foto */
+            text-align: center;
+            vertical-align: middle;
+        }
+        .photo {
+            max-width: 100%; /* Foto tidak akan melebihi lebar kotak */
+            max-height: 100px; /* Atur tinggi maksimum foto */
+            height: auto;
+        }
+    </style>
 </head>
 <body> 
-    <table border="1px" width="100%">
+    <table>
         <caption><h3><strong>BIODATA</strong></h3></caption>
         <tr>
-            <td rowspan="5"> <img src="foto1.jpg" width="100" height="150"> </td>
+            <td class="photo-cell" rowspan="5"> 
+                <img class="photo" src="gambar/icon.png" alt="Foto">
+            </td>
             <td> NIM </td>
             <td> : 123456789</td>
         </tr>
@@ -26,48 +52,6 @@
         <tr>
             <td> Kelas </td>
             <td> : A1</td>
-        </tr>
-        <tr>
-            <td rowspan="5"> <img src="foto2.jpg" width="100" height="150"> </td>
-            <td> NIM </td>
-            <td> : 987654321</td>
-        </tr>
-        <tr>
-            <td> Nama </td>
-            <td> : Jane Smith</td>
-        </tr>
-        <tr>
-            <td> Alamat</td>
-            <td> : Jl. Contoh No. 456</td>
-        </tr>
-        <tr>
-            <td> TTL </td>
-            <td> : 15 Februari 1998</td>
-        </tr>
-        <tr>
-            <td> Kelas </td>
-            <td> : B2</td>
-        </tr>
-        <tr>
-            <td rowspan="5"> <img src="gambar/icon.png" width="100" height="150"> </td>
-            <td> NIM </td>
-            <td> : 135792468</td>
-        </tr>
-        <tr>
-            <td> Nama </td>
-            <td> : Ahmad Abdullah</td>
-        </tr>
-        <tr>
-            <td> Alamat</td>
-            <td> : Jl. Contoh No. 789</td>
-        </tr>
-        <tr>
-            <td> TTL </td>
-            <td> : 20 Mei 1995</td>
-        </tr>
-        <tr>
-            <td> Kelas </td>
-            <td> : C3</td>
         </tr>
     </table>
 </body>
